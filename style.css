@@ -1,0 +1,70 @@
+/* ===== Global Reset & Fonts ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0e1a2b; /* Deep blue */
+  color: #e0f7fa; /* Soft light text */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00c896; /* Green accent */
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #a7c7d9;
+}
+
+/* ===== Main Section Layout ===== */
+section {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 40px;
+  background: #152d45;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.05);
+}
+
+h2 {
+  border-left: 4px solid #00c896;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+/* ===== Contact Info ===== */
+.contact-info a {
+  color: #00ffc6;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #708fa0;
+}
