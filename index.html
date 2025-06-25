@@ -1,56 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FLOW-NET | Where Logic Flows</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+/* ===== Global Reset & Fonts ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <header>
-    <h1>FLOW-NET</h1>
-    <p>Where Logic Flows</p>
-  </header>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0e1a2b;
+  color: #e0f7fa;
+  line-height: 1.6;
+  padding: 20px;
+}
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a self-taught full-stack developer with real-world skills in automation, bots, crypto integration, and web apps. I specialize in turning ideas into functional products — fast. Whether you're a small business, a startup, or just someone with a vision, I build reliable and modern tools to support it.
-    </p>
-  </section>
+/* ===== Header ===== */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-  <section>
-    <h2>What I Do</h2>
-    <ul>
-      <li>⚙️ Telegram Bot Development (Python, Firebase, Realtime DB)</li>
-      <li>💸 Crypto Integration (Binance, Luno APIs)</li>
-      <li>🌐 Website & Web App Development (HTML, CSS, JS, Flask)</li>
-      <li>📊 Custom Automation Scripts</li>
-      <li>🔒 Basic App Security & Encryption Logic</li>
-    </ul>
-  </section>
+header h1 {
+  font-size: 2.5rem;
+  color: #00c896;
+}
 
-  <section class="template">
-    <h2>Free Sample Template</h2>
-    <p>Download and explore a working mini-template showcasing my structure, logic, and UI design.</p>
-    <a class="download-button" href="template.zip" download>⬇️ Download Template</a>
-  </section>
+header p {
+  font-size: 1.2rem;
+  color: #a7c7d9;
+}
 
-  <section class="contact-info">
-    <h2>Contact & Bots</h2>
-    <p>Email: <a href="mailto:letscrypto25@gmail.com">letscrypto25@gmail.com</a></p>
-    <p>Phone: <a href="tel:+27659821883">065 982 1883</a></p>
-    <p>GitHub: <a href="https://letscrypto25.github.io" target="_blank">letscrypto25.github.io</a></p>
-    <p>Telegram Bot (in development): 
-      <a href="https://t.me/Letscrypto_bot" target="_blank">https://t.me/Letscrypto_bot</a><br>
-      <small>Only <code>/start</code> and <code>/help</code> currently work. Other features are under active development.</small>
-    </p>
-  </section>
+/* ===== Main Section Layout ===== */
+section {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 40px;
+  background: #152d45;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.05);
+}
 
-  <footer>
-    &copy; 2025 FLOW-NET | Built with logic and passion.
-  </footer>
+h2 {
+  border-left: 4px solid #00c896;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
 
-</body>
-</html>
+p {
+  margin-bottom: 12px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "• ";
+  color: #00c896;
+  margin-right: 6px;
+}
+
+/* ===== Download Button ===== */
+.download-button {
+  display: inline-block;
+  background: #00c896;
+  color: #0e1a2b;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.download-button:hover {
+  background-color: #00ffc6;
+}
+
+/* ===== Portfolio ===== */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  background: #1b364f;
+  border-left: 5px solid #00c896;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.project-card a {
+  color: #00ffc6;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Contact Info ===== */
+.contact-info a {
+  color: #00ffc6;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #708fa0;
+}
