@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | FLOW-NET</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FLOW-NET | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-<body class="fade-in">
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html" class="active">Portfolio</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<body>
 
   <header>
-    <h1>My Portfolio</h1>
-    <p>Projects in development — coming soon!</p>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>FLOW-NET</h1>
+    <p>Where Logic Flows</p>
   </header>
 
-  <section>
-    <h2>Telegram Bot</h2>
-    <p><a href="https://t.me/Letscrypto_bot" target="_blank">Letscrypto Bot</a></p>
-    <small>Currently supports <code>/start</code> and <code>/help</code>. More features in development.</small>
-  </section>
+  <main>
+    <section class="portfolio-section">
+      <h2>Portfolio</h2>
+      <p>Here are some of the projects I’ve worked on to showcase my skills and style.</p>
+      
+      <div class="projects-grid">
+        <!-- Example project card -->
+        <div class="project-card">
+          <h3>Telegram Bot: Letscrypto_bot</h3>
+          <p>Telegram bot integrating Binance and Luno APIs, built with Python and Firebase Realtime DB.</p>
+          <a href="https://t.me/Letscrypto_bot" target="_blank" rel="noopener noreferrer" class="project-link">View Bot</a>
+        </div>
 
-  <section>
-    <h2>Sample Web App</h2>
-    <p>A downloadable template will be available here.</p>
-    <a class="download-button" href="#">⬇️ Placeholder Download</a>
-  </section>
+        <div class="project-card">
+          <h3>Sample Website Template</h3>
+          <p>A clean, modern website template built with HTML, CSS, and JavaScript.</p>
+          <a href="template.zip" download class="project-link">Download Template</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Crypto Dashboard App</h3>
+          <p>A web app for tracking crypto portfolio values using real-time API data.</p>
+          <em>Project in development...</em>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 FLOW-NET
+    &copy; 2025 FLOW-NET | Built with logic and passion.
   </footer>
 
 </body>
