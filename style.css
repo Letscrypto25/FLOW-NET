@@ -1,4 +1,4 @@
-/* === Reset === */
+/* ===== Reset & Base ===== */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,35 @@ body {
   padding: 20px;
 }
 
-/* === Header === */
+/* ===== Navigation Bar ===== */
+nav {
+  background: #10263d;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #00ffc6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* ===== Header ===== */
 header {
   text-align: center;
   margin-bottom: 40px;
@@ -29,21 +57,7 @@ header p {
   color: #a7c7d9;
 }
 
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  color: #00ffc6;
-  text-decoration: none;
-  margin: 0 8px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* === Sections === */
+/* ===== Section Style ===== */
 section {
   max-width: 900px;
   margin: auto;
@@ -61,11 +75,11 @@ h2 {
   color: #ffffff;
 }
 
-p, li {
+p {
   margin-bottom: 12px;
 }
 
-/* === Contact Links === */
+/* ===== Contact Links ===== */
 .contact-info a {
   color: #00ffc6;
   text-decoration: none;
@@ -75,33 +89,10 @@ p, li {
   text-decoration: underline;
 }
 
-/* === Footer === */
+/* ===== Footer ===== */
 footer {
   text-align: center;
   margin-top: 60px;
   font-size: 0.9rem;
   color: #708fa0;
-}
-
-/* === Tables === */
-.pricing-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-
-.pricing-table th,
-.pricing-table td {
-  border: 1px solid #1f3d5c;
-  padding: 10px;
-  text-align: left;
-}
-
-.pricing-table th {
-  background-color: #1a2f4a;
-  color: #00ffc6;
-}
-
-.pricing-table tr:nth-child(even) {
-  background-color: #102030;
 }
