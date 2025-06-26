@@ -2,52 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | FLOW-NET</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FLOW-NET | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>FLOW-NET</h1>
-    <p>Where Logic Flows</p>
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <h1>My Work</h1>
+    <p>Real builds. Real clients. Real-world logic.</p>
   </header>
 
   <main>
     <section>
-      <h2>Project Portfolio</h2>
-      <p>Here are a few things I’ve worked on or am currently building:</p>
+      <h2>Projects</h2>
+      <div class="portfolio-grid">
 
-      <ul class="portfolio-list">
-        <li>
-          <strong>🔗 Telegram Bot:</strong> Real-time crypto trading interface with Firebase backend.
-          <br />
-          <em>Demo:</em> <a href="https://t.me/Letscrypto_bot" target="_blank">Letscrypto Bot</a>
-          <br />
-          <small>/start and /help currently available. Full features in dev.</small>
-        </li>
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>Telegram Crypto Bot</h3>
+          <p>Real-time trading bot using Python, Binance API, and Firebase for state tracking. Includes leaderboard and Telegram Webhook.</p>
+          <a class="download-button" href="https://t.me/Letscrypto_bot" target="_blank">View Bot</a>
+        </div>
 
-        <li>
-          <strong>🌐 Web Project:</strong> Lightweight multi-page static website (like this one!) with custom CSS and responsive design.
-        </li>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>FLOW-NET Website</h3>
+          <p>This very site! Built from scratch using HTML, CSS, and logic-first responsive structure to show off my style and backend readiness.</p>
+          <a class="download-button" href="index.html">Visit Site</a>
+        </div>
 
-        <li>
-          <strong>⚙️ Automation Scripts:</strong> Python-based scripts for email scraping, auto-messaging, database updates.
-        </li>
-      </ul>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>Auto-Generated Template Pack</h3>
+          <p>3 custom-designed downloadable web templates in different styles. Fully responsive and beginner-ready.</p>
+          <a class="download-button" href="Template1.zip" download>Download Pack</a>
+        </div>
+
+        <!-- Placeholder for future -->
+        <div class="project-card">
+          <h3>Next Client Project</h3>
+          <p>Your business here. Get your custom automation, crypto tool, or website built with FLOW-NET logic and care.</p>
+          <a class="download-button" href="contact.html">Let’s Build</a>
+        </div>
+
+      </div>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 FLOW-NET | Projects built with skill, speed, and passion.
+    &copy; 2025 FLOW-NET | Built with logic and passion.
   </footer>
 
 </body>
